@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+  <div class="container-fluid">
+    <%=image_tag("logo.png", class:"navbar-brand", size:"200x55")%>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo02">
+      <ul class="navbar-nav  mb-2 mb-lg-0">
+        <li class="nav-item">
+          <%=link_to"About", home_about_path, class: "nav-link active" , 'aria-current'=>"page"%>
+        </li>
+        <li class="nav-item">
+          <%=link_to"FAQ", home_faq_path, class: "nav-link active" , 'aria-current'=>"page"%>
+        </li>
+        <li class="nav-item">
+          <%=link_to"Support", home_support_path, class: "nav-link active" , 'aria-current'=>"page"%>
+        </li>
+      </ul>
+    </div>
+    <div class="d-flex align-items-center">
+    </button>
+    <%=link_to"Get Started", home_trade_path, type:"button", class:"btn btn-primary me-3"%>
+  </div>
+</div>
+</nav>
